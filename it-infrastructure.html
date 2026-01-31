@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise IT & Security</title>
+    <style>
+        /* Gaya dasar ala "Developer Notes" */
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Consolas', 'Courier New', monospace;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #30363d;
+            padding: 30px;
+            border-radius: 8px;
+            background-color: #161b22;
+        }
+        h1 { color: #58a6ff; border-bottom: 2px solid #30363d; padding-bottom: 10px; }
+        h2 { color: #d2a8ff; margin-top: 30px; }
+        h3 { color: #79c0ff; font-size: 1.1em; margin-top: 20px; }
+        p, li { color: #8b949e; }
+        
+        /* Kotak Diagram Simpel (Biar gak usah upload gambar) */
+        .diagram-box {
+            border: 1px dashed #30363d;
+            background: #0d1117;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .box-item {
+            display: inline-block;
+            border: 1px solid #58a6ff;
+            color: #58a6ff;
+            padding: 8px 15px;
+            border-radius: 4px;
+            margin: 5px;
+            font-weight: bold;
+        }
+        .arrow { color: #8b949e; margin: 0 10px; }
+        
+        /* List Hardware/Software/Network */
+        .asset-list {
+            background: #21262d;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .highlight { color: #ff7b72; font-weight: bold; }
+        
+        /* Tombol Balik */
+        .back-btn {
+            display: inline-block;
+            margin-top: 40px;
+            text-decoration: none;
+            color: #58a6ff;
+            border: 1px solid #30363d;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .back-btn:hover { background-color: #30363d; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Enterprise IT Infrastructure & Security</h1>
+        <p><strong>Topic:</strong> IT Infrastructure, Security Impact, and Risk Management.</p>
+        <p><strong>By:</strong> Masya (IT Student)</p>
+        
+        <hr style="border-color: #30363d; margin: 20px 0;">
+
+        <h2>1. The Evolution of IT Structure</h2>
+        <p>
+            IT infrastructure refers to the components required to operate and manage enterprise IT environments. 
+            It has evolved from traditional server rooms to modern cloud systems.
+        </p>
+
+        <div class="diagram-box">
+            <p style="font-size: 0.9em; color: #8b949e; margin-bottom: 15px;">[Simple Diagram: The Evolution]</p>
+            
+            <span class="box-item">On-Premise (Legacy)</span>
+            <span class="arrow">==></span>
+            <span class="box-item">Virtualization</span>
+            <span class="arrow">==></span>
+            <span class="box-item">Cloud & Hybrid</span>
+        </div>
+        <p>
+            In the past, we managed physical servers. Now, we use software to manage infrastructure (Infrastructure as Code).
+        </p>
+
+        <h2>2. Impact on Cyber Security</h2>
+        <p>
+            The development of infrastructure changes how we secure data. 
+            Because we use the internet more (Cloud), the <span class="highlight">Attack Surface</span> becomes wider.
+            Security is no longer just locking the door, but protecting the data flow.
+        </p>
+
+        <h2>3. Scale: Small Business vs. Enterprise</h2>
+        <p>The complexity depends on the business size:</p>
+        <ul>
+            <li>
+                <strong>Small Business:</strong> Simple network (Router + PCs). 
+                Security focus is usually basic (Antivirus, Firewall). 
+                Easier to manage but limited budget.
+            </li>
+            <br>
+            <li>
+                <strong>Big Enterprise:</strong> Complex network (Data Centers, Branch Offices).
+                Security is very strict (SOC Team, VPN, Encryption). 
+                The risk is higher because they hold more valuable data.
+            </li>
+        </ul>
+
+        <h2>4. How to Guard the Assets?</h2>
+        <p>We classify protection based on the asset type:</p>
+
+        <div class="asset-list">
+            <h3>🖥️ Hardware</h3>
+            <p>Physical security. Use CCTV, lock the server room, and use biometric access.</p>
+        </div>
+
+        <div class="asset-list">
+            <h3>💾 Software</h3>
+            <p>Update and patch regularly. Manage licenses and use strong Antivirus/Anti-malware.</p>
+        </div>
+
+        <div class="asset-list">
+            <h3>🌐 Network</h3>
+            <p>Use Firewalls to filter traffic. Use VPN for remote access. Segregate the network (separate guest vs admin).</p>
+        </div>
+
+        <h2>5. Managing the Risks</h2>
+        <p>
+            We cannot eliminate 100% of risks, so we must manage them.
+            <strong>Risk Management</strong> involves identifying threats, calculating the impact, and planning a backup (Disaster Recovery).
+            If the system goes down, how fast can we recover? That is the key.
+        </p>
+
+        <a href="index.html" class="back-btn">← Back to Home</a>
+    </div>
+
+</body>
+</html>
