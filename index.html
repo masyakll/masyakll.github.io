@@ -30,6 +30,19 @@
         }
         .green-text { color: #3fb950; }
         a { color: #58a6ff; text-decoration: none; }
+        
+        /* Gaya tambahan buat kartu artikel */
+        .article-card {
+            margin-top: 15px;
+            border: 1px solid #30363d;
+            padding: 15px;
+            border-radius: 5px;
+            transition: background 0.2s;
+        }
+        .article-card:hover {
+            background: #161b22;
+            border-color: #8b949e;
+        }
     </style>
 </head>
 <body>
@@ -46,8 +59,16 @@
             <p>> Website Online! ✅</p>
         </div>
 
-        <h3> My Articles</h3>
-        <p>Belum ada artikel. <em>Coming soon...</em></p>
+        <h3>📁 My Articles</h3>
+        
+        <div class="article-card">
+            <span style="color: #8b949e; font-size: 0.8em;">Jan 2026</span><br>
+            <a href="it-infrastructure.html" style="font-size: 1.1em; font-weight: bold;">Tugas 1: Enterprise IT & Security</a>
+            <p style="margin-top: 5px; color: #8b949e; font-size: 0.9em;">
+                Notes on IT evolution, assets protection (Hardware/Software/Network), and risk management.
+            </p>
+        </div>
+
     </div>
 </body>
 </html>
