@@ -1,74 +1,140 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Masya | IT Student</title>
+    <title>Masya's Blog</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body {
-            background-color: #0d1117;
-            color: #c9d1d9;
-            font-family: 'Consolas', monospace;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            border-left: 1px solid #30363d;
-            padding-left: 20px;
-            min-height: 90vh;
-        }
-        h1 { color: #58a6ff; }
-        .terminal-box {
-            background: #161b22;
-            border: 1px solid #30363d;
-            padding: 15px;
-            border-radius: 6px;
-            margin: 30px 0;
-        }
-        .green-text { color: #3fb950; }
-        a { color: #58a6ff; text-decoration: none; }
         
-        /* Gaya tambahan buat kartu artikel */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: #121212; 
+            color: #e0e0e0;
+        
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            padding: 30px;
+        }
+
+     
+        .main-container {
+            max-width: 700px;
+            margin: 50px auto; 
+        }
+
+        /* Header Section */
+        header {
+            margin-bottom: 50px;
+            border-bottom: 1px solid #2c2c2c;
+            padding-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #a0a0a0;
+            margin-top: 10px;
+            font-weight: 400;
+        }
+
+        /* Intro Section (Teks Natural) */
+        .intro-text {
+            margin-bottom: 40px;
+            font-size: 1.05rem;
+        }
+
+        /* Section Title */
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            color: #ffffff;
+        }
+
+        
+        .article-link {
+            text-decoration: none;
+            display: block;
+        }
+
         .article-card {
-            margin-top: 15px;
-            border: 1px solid #30363d;
-            padding: 15px;
-            border-radius: 5px;
-            transition: background 0.2s;
+            background-color: #1e1e1e; 
+            padding: 25px;
+            border-radius: 12px; 
+            border: 1px solid #2c2c2c;
+            transition: all 0.3s ease;
+            cursor: pointer;
         }
+
+       
         .article-card:hover {
-            background: #161b22;
-            border-color: #8b949e;
+            border-color: #4a9eff;
+            transform: translateY(-3px); 
+            box-shadow: 0 10px 20px -10px rgba(74, 158, 255, 0.2);
         }
+
+        .article-date {
+            font-size: 0.85rem;
+            color: #808080;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .article-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #4a9eff; 
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .article-desc {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+        }
+
     </style>
 </head>
 <body>
-    <div class="container">
+
+    <div class="main-container">
+        
         <header>
             <h1>Masya.</h1>
-            <p>Information Technology Student @ President University</p>
+            <p class="subtitle">IT Student at President University</p>
         </header>
 
-        <div class="terminal-box">
-            <p><span class="green-text">➜  ~</span>  whoami</p>
-            <p>> Masya, Semester 5 IT Student.</p>
-            <p><span class="green-text">➜  ~</span>  status</p>
-            <p>> Website Online! ✅</p>
-        </div>
-
-        <h3>📁 My Articles</h3>
-        
-        <div class="article-card">
-            <span style="color: #8b949e; font-size: 0.8em;">Jan 2026</span><br>
-            <a href="it-infrastructure.html" style="font-size: 1.1em; font-weight: bold;">Tugas 1: Enterprise IT & Security</a>
-            <p style="margin-top: 5px; color: #8b949e; font-size: 0.9em;">
-                Notes on IT evolution, assets protection (Hardware/Software/Network), and risk management.
+        <section class="intro-text">
+            <p>
+                Hi everyone! I'm a 5th semester Information Technology student. 
+                This simple site serves as my personal blog to share my college assignments, technical notes, and thoughts on technology.
             </p>
-        </div>
+        </section>
+
+        <section>
+            <h2>Academic Assignments</h2>
+
+            <a href="it-infrastructure.html" class="article-link">
+                <div class="article-card">
+                    <span class="article-date">January 2026 • Enterprise IT</span>
+                    <span class="article-title">Infrastructure, Security & Risk Management</span>
+                    <p class="article-desc">
+                        A summary of enterprise IT structure evolution, the differences between small and big business setups, and core strategies for protecting hardware, software, and network assets.
+                    </p>
+                </div>
+            </a>
+
+        </section>
 
     </div>
+
 </body>
 </html>
