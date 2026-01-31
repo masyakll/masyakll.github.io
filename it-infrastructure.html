@@ -3,148 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enterprise IT & Security</title>
+    <title>Enterprise IT Structure & Security</title>
     <style>
-        /* Gaya dasar ala "Developer Notes" */
+      
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            background-color: #0d1117;
-            color: #c9d1d9;
-            font-family: 'Consolas', 'Courier New', monospace;
-            line-height: 1.6;
-            padding: 20px;
+            background-color: #121212; 
+            color: #e0e0e0;
+          
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.8; 
+            padding: 40px 20px;
         }
+
         .container {
-            max-width: 800px;
+            max-width: 750px; 
             margin: 0 auto;
-            border: 1px solid #30363d;
+        }
+
+        /* Header Style */
+        header {
+            border-bottom: 1px solid #2c2c2c;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #ffffff;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .meta {
+            color: #888;
+            font-size: 0.95rem;
+        }
+
+        /* Typography Artikel */
+        p {
+            margin-bottom: 25px; 
+            font-size: 1.05rem;
+            color: #cfcfcf;
+        }
+
+        h2 {
+            color: #4a9eff; 
+            font-size: 1.6rem;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: #ffffff;
+            font-size: 1.3rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+      
+        .diagram-container {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 12px;
             padding: 30px;
-            border-radius: 8px;
-            background-color: #161b22;
-        }
-        h1 { color: #58a6ff; border-bottom: 2px solid #30363d; padding-bottom: 10px; }
-        h2 { color: #d2a8ff; margin-top: 30px; }
-        h3 { color: #79c0ff; font-size: 1.1em; margin-top: 20px; }
-        p, li { color: #8b949e; }
-        
-        /* Kotak Diagram Simpel (Biar gak usah upload gambar) */
-        .diagram-box {
-            border: 1px dashed #30363d;
-            background: #0d1117;
-            padding: 20px;
-            margin: 20px 0;
+            margin: 30px 0;
             text-align: center;
-            border-radius: 5px;
         }
-        .box-item {
+
+        .diagram-step {
             display: inline-block;
-            border: 1px solid #58a6ff;
-            color: #58a6ff;
-            padding: 8px 15px;
-            border-radius: 4px;
-            margin: 5px;
-            font-weight: bold;
-        }
-        .arrow { color: #8b949e; margin: 0 10px; }
-        
-        /* List Hardware/Software/Network */
-        .asset-list {
-            background: #21262d;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-        .highlight { color: #ff7b72; font-weight: bold; }
-        
-        /* Tombol Balik */
-        .back-btn {
-            display: inline-block;
-            margin-top: 40px;
-            text-decoration: none;
-            color: #58a6ff;
-            border: 1px solid #30363d;
+            background-color: #252525;
             padding: 10px 20px;
-            border-radius: 5px;
+            border-radius: 8px;
+            border: 1px solid #4a9eff;
+            color: #4a9eff;
+            font-weight: 600;
+            margin: 5px;
         }
-        .back-btn:hover { background-color: #30363d; }
+
+        .arrow {
+            color: #666;
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Link Balik */
+        .back-link {
+            display: inline-block;
+            margin-top: 50px;
+            color: #888;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: #4a9eff;
+            border-bottom-color: #4a9eff;
+        }
+
+        /* Highlight text */
+        strong {
+            color: #fff;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Enterprise IT Infrastructure & Security</h1>
-        <p><strong>Topic:</strong> IT Infrastructure, Security Impact, and Risk Management.</p>
-        <p><strong>By:</strong> Masya (IT Student)</p>
         
-        <hr style="border-color: #30363d; margin: 20px 0;">
+        <header>
+            <h1>Enterprise IT Infrastructure & Security Strategies</h1>
+            <p class="meta">By Masya • January 2026 • IT Infrastructure Assignment</p>
+        </header>
 
-        <h2>1. The Evolution of IT Structure</h2>
         <p>
-            IT infrastructure refers to the components required to operate and manage enterprise IT environments. 
-            It has evolved from traditional server rooms to modern cloud systems.
+            When we talk about an enterprise, we are talking about a complex system that keeps a business running. IT Infrastructure is the backbone of this system. It is not just about having computers or fast internet; it encompasses the entire collection of hardware, software, networks, and facilities required to develop, test, operate, and monitor information technology services.
         </p>
 
-        <div class="diagram-box">
-            <p style="font-size: 0.9em; color: #8b949e; margin-bottom: 15px;">[Simple Diagram: The Evolution]</p>
-            
-            <span class="box-item">On-Premise (Legacy)</span>
-            <span class="arrow">==></span>
-            <span class="box-item">Virtualization</span>
-            <span class="arrow">==></span>
-            <span class="box-item">Cloud & Hybrid</span>
-        </div>
         <p>
-            In the past, we managed physical servers. Now, we use software to manage infrastructure (Infrastructure as Code).
+            In this article, I want to break down how this infrastructure has evolved, how different business scales approach security differently, and the strategies we use to protect our most valuable digital assets.
         </p>
 
-        <h2>2. Impact on Cyber Security</h2>
+        <h2>The Evolution of IT Structure</h2>
+
         <p>
-            The development of infrastructure changes how we secure data. 
-            Because we use the internet more (Cloud), the <span class="highlight">Attack Surface</span> becomes wider.
-            Security is no longer just locking the door, but protecting the data flow.
+            The way companies manage their technology has shifted dramatically over the last few decades. We started in an era where everything had to be physical and on-site. If you wanted to run an application, you had to buy a server, find a room with good air conditioning, and hire someone to watch it 24/7.
         </p>
 
-        <h2>3. Scale: Small Business vs. Enterprise</h2>
-        <p>The complexity depends on the business size:</p>
-        <ul>
-            <li>
-                <strong>Small Business:</strong> Simple network (Router + PCs). 
-                Security focus is usually basic (Antivirus, Firewall). 
-                Easier to manage but limited budget.
-            </li>
-            <br>
-            <li>
-                <strong>Big Enterprise:</strong> Complex network (Data Centers, Branch Offices).
-                Security is very strict (SOC Team, VPN, Encryption). 
-                The risk is higher because they hold more valuable data.
-            </li>
-        </ul>
-
-        <h2>4. How to Guard the Assets?</h2>
-        <p>We classify protection based on the asset type:</p>
-
-        <div class="asset-list">
-            <h3>🖥️ Hardware</h3>
-            <p>Physical security. Use CCTV, lock the server room, and use biometric access.</p>
-        </div>
-
-        <div class="asset-list">
-            <h3>💾 Software</h3>
-            <p>Update and patch regularly. Manage licenses and use strong Antivirus/Anti-malware.</p>
-        </div>
-
-        <div class="asset-list">
-            <h3>🌐 Network</h3>
-            <p>Use Firewalls to filter traffic. Use VPN for remote access. Segregate the network (separate guest vs admin).</p>
-        </div>
-
-        <h2>5. Managing the Risks</h2>
         <p>
-            We cannot eliminate 100% of risks, so we must manage them.
-            <strong>Risk Management</strong> involves identifying threats, calculating the impact, and planning a backup (Disaster Recovery).
-            If the system goes down, how fast can we recover? That is the key.
+            Today, that physical dependency is disappearing. We have moved towards virtualization and cloud computing, where infrastructure is managed through code rather than screwdrivers.
         </p>
 
-        <a href="index.html" class="back-btn">← Back to Home</a>
+        <div class="diagram-container">
+            <span style="display:block; color:#666; margin-bottom:15px; font-size:0.9rem;">Figure 1: The Structural Evolution</span>
+            <div class="diagram-step">On-Premise (Legacy)</div>
+            <span class="arrow">➝</span>
+            <div class="diagram-step">Virtualization</div>
+            <span class="arrow">➝</span>
+            <div class="diagram-step">Cloud & Hybrid</div>
+        </div>
+
+        <p>
+            This evolution brings a significant impact on <strong>Cyber Security</strong>. In the past, security was like guarding a castle; you just needed to lock the front door (the firewall). Now, with Cloud and Hybrid systems, our data is everywhere. The "castle walls" are gone. This expands what we call the <em>Attack Surface</em>, making security much more complex because we have to protect data that flows outside our physical buildings.
+        </p>
+
+        <h2>Business Scale: Small vs. Enterprise</h2>
+
+        <p>
+            Security is not a one-size-fits-all solution. The approach heavily depends on the scale of the organization.
+        </p>
+
+        <p>
+            For a <strong>Small Business</strong>, the infrastructure is usually straightforward. They might rely on a simple router, a few laptops, and cloud services like Google Workspace. Their security focus is fundamental: installing good antivirus software, setting up a basic firewall, and ensuring employees use strong passwords. The budget is limited, so the goal is practical protection against common threats.
+        </p>
+
+        <p>
+            In contrast, a <strong>Big Enterprise</strong> operates on a completely different level. We are talking about data centers, branch offices connected via VPNs, and thousands of devices. The risk here is massive because they hold valuable customer data. Therefore, their security involves dedicated teams (SOC), advanced encryption for all data, and strict access controls. They don't just prevent attacks; they actively hunt for threats within their complex networks.
+        </p>
+
+        <h2>Asset Protection Strategy</h2>
+
+        <p>
+            Regardless of the size, every IT infrastructure has three core assets that must be safeguarded: Hardware, Software, and the Network.
+        </p>
+
+        <h3>1. Hardware Protection</h3>
+        <p>
+            Physical security is often overlooked but is the first line of defense. We protect hardware by restricting access to critical areas, such as server rooms, using biometric scanners or keycards. Surveillance systems like CCTV are essential to monitor who interacts with the physical machines.
+        </p>
+
+        <h3>2. Software Protection</h3>
+        <p>
+            Software is where most vulnerabilities exist. The primary rule here is regular patching and updates. Hackers love outdated software. Additionally, managing licenses is crucial to avoid legal issues, and using robust anti-malware tools helps detect malicious scripts before they execute.
+        </p>
+
+        <h3>3. Network Protection</h3>
+        <p>
+            The network is the highway for data, and we need traffic cops. Firewalls act as filters to block unauthorized access. We also implement network segmentation, which means separating the guest Wi-Fi from the internal corporate data, so if a visitor's phone is hacked, it doesn't compromise the company's servers.
+        </p>
+
+        <h2>Managing the Risk</h2>
+
+        <p>
+            Finally, we must accept that no system is 100% secure. This is where <strong>Risk Management</strong> comes in. It is the process of identifying potential threats and calculating the impact if those threats materialize. A key part of this is having a Disaster Recovery Plan. If our main server goes down or gets hit by ransomware, do we have a clean backup? How fast can we be back online? answering these questions is what separates a resilient enterprise from a fragile one.
+        </p>
+
+        <a href="index.html" class="back-link">← Back to Home</a>
+
     </div>
 
 </body>
